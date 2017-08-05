@@ -1,0 +1,33 @@
+1.git clone  xxx    //clone 远程的repository
+
+2.git status  //查看当前更改状态,和提示
+
+3.git branch XXXX  //拉分支
+
+4.git checkout  XXXX //切换分支
+
+5.git checkout -b XXXX //拉分支,并且切换 
+
+6.git branch  //显示当前repository 所有分支   -d 删除一个分支
+
+7.git commit -m "" //check in , comments是""
+
+8.git log  //显示所有commits
+
+9.git reset --hard [commits id ]  // 回退到对应id 版本 ,(直接回退, 很彻底)
+
+10. git reset --hard HEAD^   // ^表示会退到上个版本  ,^^表示上上个版本  ,下次push是要用到git push -f
+
+11. git reset [HEAD^] 或者[commits id]  //与上述 --hard 相反,  撤销commit而已,进入unstage状态
+
+12.git clean  // 从工作目录移除un track 文件  ,通常git clean -df
+
+13. git merge [branch name]// 把[branch name]分支merge到当前分支
+
+14. git diff [filename]
+
+15. git pull origin [分支name]  : git pull origin master            //可以-f
+
+16. git push origin [分支name]  : git push origin master
+
+17. git revert [commit id]  // 用一次新的提交来 revert之前的提交,有 revert commit记录.和git reset不一样
