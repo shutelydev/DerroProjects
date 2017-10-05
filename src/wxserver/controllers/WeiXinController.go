@@ -36,5 +36,4 @@ func (c *WeiXinController) WeixinHandler() {
 	}
 
 	server.Send()
-
 }
